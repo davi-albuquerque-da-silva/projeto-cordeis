@@ -70,6 +70,20 @@ section.imagem >p{
     padding:5px;
     background-color: rgba(0, 0, 0, 0.255);
 }
+section#img01{
+    border-image: url('../imagens/hourglass-620397_640.jpg');
+}
+
+section#img02{
+    background-image: url('../imagens/setenil-de-las-bodegas-298655_640.jpg');
+}
+
+
+section#img03{
+    background-image: url('../imagens/jam-2575843_640.jpg');
+}
+
+
 footer{
     background-color: black;
     color: white;
