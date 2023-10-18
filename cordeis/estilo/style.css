@@ -62,25 +62,45 @@ section.normal {
     color: black;
 }
 section.imagem{
-    background-color: rgb(67, 61, 61);
+    background-color: rgb(51, 51, 51);
     color: white;
+    box-shadow: 1px 1px 0px black;
+    background-size:cover ;
+    background-attachment: fixed;
 }
 section.imagem >p{
     display: inline-block;
     padding:5px;
-    background-color: rgba(0, 0, 0, 0.255);
+    background-color: rgba(0, 0, 0, 0.514);
+    text-shadow: 2px 2px 0px black;
 }
 section#img01{
-    border-image: url('../imagens/hourglass-620397_640.jpg');
+    background-image: url('../imagens/hourglass-620397_640.jpg');
+    background-position:right center ;
+    
 }
 
 section#img02{
     background-image: url('../imagens/setenil-de-las-bodegas-298655_640.jpg');
+    
 }
 
 
 section#img03{
     background-image: url('../imagens/jam-2575843_640.jpg');
+
+}
+
+
+section#img04{
+    background-image: url('../imagens/highway-1666635_640\ \(1\).jpg');
+
+}
+
+section#img05{
+    background-image: url('../imagens/morning-2243465_640.jpg');
+    background-size:cover ;
+
 }
 
 
