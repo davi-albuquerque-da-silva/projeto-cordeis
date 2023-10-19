@@ -27,12 +27,26 @@ header {
     color:white;
     text-align: center;
 }
+
+
 header > h1{
     padding-top: 50px;
     font-variant: small-caps;
     font-family: var(--fonte2);
     font-size: 10vh;
 }
+span#burquer{
+    color: white;
+    display: block;
+    text-align: center;
+    padding: 10px;
+}
+span#burquer :hover{
+    background-color: white;
+    color:black;
+}
+
+
 header > p{
     padding-bottom:50px ;
 }
