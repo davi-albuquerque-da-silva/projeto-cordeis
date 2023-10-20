@@ -35,6 +35,22 @@ header > h1{
     font-family: var(--fonte2);
     font-size: 10vh;
 }
+nav {
+ 
+    padding: 10px;
+    text-align: center;
+}
+nav > a {
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    
+   }
+#menu a{
+    display:block;
+    padding: .5rem;
+}
 span#burquer{
     color: white;
     display: block;
@@ -124,3 +140,10 @@ footer{
     text-align: center;
 }
 
+@media (max-width:600px){
+    #menu{
+        display: block;
+    }
+
+
+}
