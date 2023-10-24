@@ -6,6 +6,8 @@
     <title>projeto-cordeis</title>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
       rel="stylesheet">
+     
+
     <link rel="stylesheet" href="estilo/style.css">
     <style>
         
@@ -21,16 +23,18 @@
 <body>
        <header>
            <h1> projeto-cordeis </h1>
-  
-  <span id="burquer" class="material-icons" onclick="clickMenu()" >menu</span>
 
-           
- 
-        <!--       <h2>links das outras paginas 
-               
-               </h2>
-               <p><a href="index02.html">segunda pagina</a> <br>   <a href="index03.html">terceira pagina </a> <br> <a href="index04.html">quarta pagina</a></p> -->
-       <nav id="itens"  >
+           <div class="search">
+            <input type="text" name="search" id="isearch" placeholder="perquisar">
+            <a href="search-btn"></a>
+ <span class="material-icons">search</span>
+           </div>
+
+
+  <div id="iburguer">
+<span id="burquer" class="material-icons" onclick="clickMenu()" >menu</span>
+
+<nav id="itens"  >
        
            <ul id="menu">
             <li>
@@ -39,9 +43,19 @@
             <li><a href="#">cordeis</a></li>
             <li><a href="#">cadastro</a></li>
             <li><a href="#">portifolio</a></li>
-            
+            <li><a href="http://127.0.0.1:5500/cordeis/index02">cordel</a></li>
            </ul>
        </nav>
+</div>
+  
+
+           
+ 
+        <!--       <h2>links das outras paginas 
+               
+               </h2>
+               <p><a href="index02.html">segunda pagina</a> <br>   <a href="index03.html">terceira pagina </a> <br> <a href="index04.html">quarta pagina</a></p> -->
+       
        </header>
         
     <section>
@@ -78,6 +92,19 @@
            }
 
         }
+        document.addEventListener("DOMContentLoaded", function(){
+   var target = location.hash; // verifica se tem hash na URL
+   var linq = $("ul.nav-tabs li a[href$='"+target+"']"); // link que contém a hash
+   if(target && linq.length){
+      setTimeout(function(){
+         // distância do menu ao topo menos altura do nav
+         var top = $(".sidebar").offset().top - $("#main-nav").height();
+         window.scrollTo(0, top); // rola atela até o menu
+         linq.trigger("click"); // dispara o clique
+      }, 500);
+   }
+});
+
     </script>
   
 
