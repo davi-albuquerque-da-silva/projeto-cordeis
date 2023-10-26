@@ -40,7 +40,7 @@ header > h1{
     left: 50%;
 
 }
-itens
+
 
 nav {
  
@@ -64,6 +64,11 @@ div.iburquer{
    
 
 }
+#menu >li{
+    display: inline;
+}
+#menu >li>a {
+    display: inline;}
 
 span#burquer{
     color: white;
