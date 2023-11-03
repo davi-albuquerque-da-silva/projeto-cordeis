@@ -14,7 +14,7 @@
     <style>
         
         header{
-            background-color: rgba(90, 48, 48, 0.55);
+            background-color: rgba(95, 79, 79, 0.55);
     color:white;
     text-align: center;
 
@@ -26,12 +26,21 @@
        <header>
            <h1> projeto-cordeis </h1>
 
-           <div class="search">
-            <input type="text" name="search" id="isearch" placeholder="perquisar">
-            <a href="search-btn"></a>
- <span class="material-icons">search</span>
-           </div>
 
+            <form action="search-container">
+
+           <div class="search">
+            <input type="text" name="search" 
+        id="isearch" placeholder="perquisar">
+            <a href="search-btn"></a>
+        <span class="material-icons">search</span>
+           </div> 
+            </form>
+           
+          <!--
+           
+           
+          -->  
 
  
     <div id="iburguer">
@@ -98,7 +107,7 @@
            }
 
         }
-        document.addEventListener("DOMContentLoaded", function(){
+        /*document.addEventListener("DOMContentLoaded", function(){
    var target = location.hash; // verifica se tem hash na URL
    var linq = $("ul.nav-tabs li a[href$='"+target+"']"); // link que contém a hash
    if(target && linq.length){
@@ -109,7 +118,7 @@
          linq.trigger("click"); // dispara o clique
       }, 500);
    }
-});
+});*/
 
     </script>
   

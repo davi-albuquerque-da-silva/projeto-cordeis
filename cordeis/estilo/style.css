@@ -38,25 +38,33 @@ header > h1{
 .search{
     top: 50%;
     left: 50%;
-
 }
 
+.search,container{
+   margin: 0px;
+   padding: 0px;
+}
 
 nav {
- 
+     
     padding: 10px;
-    text-align: center;
+   text-align: center;
+   position: relative;
 }
 nav > a {
     padding: 10px;
     text-decoration: none;
     color: white;
     display: inline-block;
+ text-align: center;
     
    } 
 
 div.iburquer{
     position: absolute;
+    top: 50%;
+    left: 50%;
+   
 }
 #menu a{
     display:block;
