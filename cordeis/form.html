@@ -4,24 +4,45 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>formulario de login</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+
     <link rel="stylesheet" href="estilo/styleF.css">
+    <link rel="stylesheet" href="estilo/media-query.css">
+   
 
 </head>
 <body>
     <main>
         <section id="login"  >
             <div id="imagem" >
-            
+            <!-- aqui vai a imagem nas css      -->
             </div>
             <div id="formulario">
          <h1>
             login
          </h1>
          <p>
-            seja bem vindo(a) ao site.
+            seja bem vindo(a) ao site,cadastre-se aqui
          </p>
-         <form action="login-php" method="post"></form>
+         <form action="login-php" method="post">
+           <div class="campo">
+            <span class="material-icons">person</span>
+             <input type="email" name="login" id="ilogin" placeholder="seu e-mail" autocomplete="email" required maxlength="30"> 
+             <label for="ilogin">login</label>
+           </div>
+           <div class="campo">
+            <span class="material-icons">fvpn_key</span>
+            <input type="password" name="senha" id="isenha" placeholder="sua senha" autocomplete="current-password" required minlength="8">
+           
+ <label for="isenha">senha</label>
+           </div>
+
+        </form>
             </div>
+            <input type="submit" value="entrar">
+            <a href="esqueci.html">esqueci a senha <span class="material-icons">mail</span>      </a>
         </section>
     </main>
 </body>
