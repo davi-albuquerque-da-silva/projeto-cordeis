@@ -24,14 +24,14 @@ if (isset($_post ['email']) || isset ($_post['senha']))
             session_start();
         }
       $_SESSION['id']=$usuario['id'];
-      $_SESSION['nome'] =$usuario['nome']
+      $_SESSION['nome'] =$usuario['nome'];
+
+      header("location:painel.php");
 
     }else{
         echo "falha ao logar email ou senha incorretas"
     }
   }
-  
-
 ?>
 
 
@@ -51,7 +51,7 @@ if (isset($_post ['email']) || isset ($_post['senha']))
      </p>
      <P>
      <label for="senha"></label>
-        <input type="password" name="senha"> 
+       <input type="password" name="senha">
      </P>
      <p>
         <button type="submit">entrar</button>
